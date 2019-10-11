@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
+    
     <record model="ir.ui.view" id="isaacapp.list">
       <field name="name">isaacapp list</field>
       <field name="model">isaacapp.isaacapp</field>
@@ -13,19 +13,19 @@
         </tree>
       </field>
     </record>
-    -->
+    
 
     <!-- actions opening views on models -->
-    <!--
+    
     <record model="ir.actions.act_window" id="isaacapp.action_window">
       <field name="name">isaacapp window</field>
       <field name="res_model">isaacapp.isaacapp</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+    
 
     <!-- server action to the one above -->
-    <!--
+    
     <record model="ir.actions.server" id="isaacapp.action_server">
       <field name="name">isaacapp server</field>
       <field name="model_id" ref="model_isaacapp_isaacapp"/>
@@ -38,23 +38,23 @@
         }
       </field>
     </record>
-    -->
+    
 
     <!-- Top menu item -->
-    <!--
+    
     <menuitem name="isaacapp" id="isaacapp.menu_root"/>
-    -->
+    
     <!-- menu categories -->
-    <!--
+    
     <menuitem name="Menu 1" id="isaacapp.menu_1" parent="isaacapp.menu_root"/>
     <menuitem name="Menu 2" id="isaacapp.menu_2" parent="isaacapp.menu_root"/>
-    -->
+    
     <!-- actions -->
-    <!--
+    
     <menuitem name="List" id="isaacapp.menu_1_list" parent="isaacapp.menu_1"
               action="isaacapp.action_window"/>
     <menuitem name="Server to list" id="isaacapp" parent="isaacapp.menu_2"
               action="isaacapp.action_server"/>
-    -->
+    
   </data>
 </odoo>
