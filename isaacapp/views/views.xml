@@ -18,7 +18,7 @@
     <!-- actions opening views on models -->
     
     <record model="ir.actions.act_window" id="isaacapp.action_window">
-      <field name="name">isaacapp window</field>
+      <field name="name">Isaac App</field>
       <field name="res_model">isaacapp.isaacapp</field>
       <field name="view_mode">tree,form</field>
     </record>
