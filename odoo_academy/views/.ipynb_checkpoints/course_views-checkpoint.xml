@@ -12,9 +12,14 @@
                         <group>
                             <group>
                                 <field name="active"/>
+                                <field name="level"/>
                             </group>
                             <group>
-                                <field name="level"/>
+                                <field name="currency_id" invisible="1"/>
+                                <field name="base_price" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="currency_id" invisible="1"/>
+                                <field name="additional_fee" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                                <field name="total_price" force_save="1"/>
                             </group>
                         </group>
                         <notebook>
